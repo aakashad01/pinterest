@@ -8,9 +8,10 @@ body{
     background: linear-gradient(white 15%,rgb(102, 102, 102));
     background-repeat: no-repeat;
     background-size: cover;
-    height: 683px;
+    height: 750px;
 }
 body a:link{
+    color: black;
     text-decoration: none;
 }
 body a:visited{
@@ -26,12 +27,13 @@ body a:visited{
     display: flex;
     justify-content:space-between;
     height: 100px;
-    border: red solid 1px;
+    min-width: 566px;
+    /* border: red solid 1px; */
     
 }
 #logo-name{
     display: flex;
-    border: black solid 1px;
+    /* border: black solid 1px; */
 }
 #top h3{
     color: #cc0000;
@@ -48,7 +50,7 @@ body a:visited{
     justify-content: space-between;
     min-width: 28rem;
     max-width: 28rem;
-    border: blue solid 1px;
+    /* border: blue solid 1px; */
     position: absolute;
     white-space: normal;
     right: 0;
@@ -86,20 +88,23 @@ body a:visited{
     padding: 10px 6px;
     border-radius: 30px;
 }
-#ani-p{
+#down{
     display: flex;
-    width:350px;
-    height:350px;
-    border: 1px solid blue;
+    justify-content: space-between;
+}
+#ani-p{
+    width:425px;
+    height:425px;
+    /* border: 1px solid blue; */
 }
 #ani{
-    width:150px;
-    height: 150px;
+    width:175px;
+    height: 175px;
     border-radius: 8%;
     background-color: red;
-    animation: ani 6s infinite alternate;
+    animation: ani 6s infinite;
     position: relative;
-    /* background: linear-gradient(white,black); */
+    /* background: linear-gradient(white 2%,black); */
 }
 #ani:hover{
     background-image: url(img/funny-smile.gif);
@@ -112,23 +117,23 @@ body a:visited{
         left:0px; 
         top:0px;
     }
-    25% {
+    25%{
         background-color: #a52f27;
-        left:200px;
+        left:250px;
         top:0px;
-        border-radius: 25%;
+        border-radius: 20%;
     }
-    50% {
+    50%{
         background-color: #cc5432;
-        left:200px;
-        top:200px;
+        left:250px;
+        top:250px;
         border-radius: 50%;
     }
     75% {
-        background-color: #ef9260;
+        background-color: #a52f27;
         left:0px;
-        top:200px;
-        border-radius: 25%;
+        top:250px;
+        border-radius: 20%;
     }
     100% {background-color: #531b1b;
         left:0px;
@@ -136,8 +141,14 @@ body a:visited{
     }
 }
 #tra2d{
-    display: flex;
     width:150px;
-    height: 150px;
+    height: 100px;
     background-color: red;
+    margin: 40px 50px;
+    transition: 1s;
+    /* transform: rotate(20deg); */
+    /* transform: skewx(20deg); */
+}
+#tra2d:hover{
+    transform: rotate(360deg);
 }
